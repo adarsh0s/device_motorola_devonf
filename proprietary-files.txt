@@ -17,7 +17,9 @@ vendor/etc/ap_gain.bin
 vendor/etc/ap_gain_mmul.bin
 vendor/etc/aurisys_config.xml
 vendor/etc/aurisys_config_rv.xml
+vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libbwc.so
+vendor/lib/libmp3dec_mtk.so
 vendor/lib64/hw/audio.primary.mediatek.so;SYMLINK=vendor/lib64/hw/audio.primary.mt6855.so
 vendor/lib64/hw/audio.r_submix.mediatek.so;SYMLINK=vendor/lib64/hw/audio.r_submix.mt6855.so
 vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
