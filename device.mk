@@ -14,7 +14,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Inherit virtual_ab_ota product
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
 
 # Add vendor log tags
 include $(DEVICE_PATH)/configs/properties/vendor_log_tags.mk

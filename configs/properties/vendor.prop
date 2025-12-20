@@ -353,6 +353,9 @@ ro.vendor.mtk_trustonic_tee_support=1
 # Thermal
 ro.vendor.mtk_thermal_2_0=1
 
+# Update engine
+ro.virtual_ab.compression.threads=true
+
 # USB
 vendor.usb.use_ffs_mtp=1
 
