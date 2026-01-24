@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2024 ArrowOS
-# Copyright (C) 2024 PixelOS
+# Copyright (C) 2024 LineageOS
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -254,7 +254,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     CarrierConfigOverlayDevonf \
     FrameworksResOverlayDevonf \
-    OpenDeltaOverlayDevonf \
     PowerOffAlarmOverlayDevonf \
     SettingsOverlayDevonf \
     SettingsProviderOverlayDevonf \
