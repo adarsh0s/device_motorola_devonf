@@ -333,6 +333,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PowerOffAlarm
 
+# ScrollOptimizer
+PRODUCT_PRODUCT_PROPERTIES += \
+     persist.sys.perf.scroll_opt=true \
+     persist.sys.perf.scroll_opt.heavy_app=2
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.devonf-multihal
