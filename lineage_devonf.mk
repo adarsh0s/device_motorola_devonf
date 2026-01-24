@@ -11,19 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile.
 $(call inherit-product, device/motorola/devonf/device.mk)
 
-# Inherit some common YAAP stuff.
-$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := yaap_devonf
+PRODUCT_NAME := lineage_devonf
 PRODUCT_DEVICE := devonf
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g73 5G 
+PRODUCT_MODEL := moto g73 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceName=devonf_g_sys \
+    DeviceName=devonf \
     BuildDesc="devonf_g_sys-user 14 U1TNS34M.82-12-7-16 97b8f release-keys" \
     BuildFingerprint=motorola/devonf_g_sys/devonf:14/U1TNS34M.82-12-7-16/97b8f:user/release-keys

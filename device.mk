@@ -408,3 +408,8 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/motorola/devonf/devonf-vendor.mk)
 $(call inherit-product, vendor/motorola/devonf-motcamera/devonf-motcamera-vendor.mk)
+
+ifeq ($(TARGET_BUILD_GAPPS),true)
+    $(call inherit-product, vendor/gapps/arm64/arm64-vendor.mk)
+    $(call inherit-product, vendor/gapps/common/common-vendor.mk)
+endif
