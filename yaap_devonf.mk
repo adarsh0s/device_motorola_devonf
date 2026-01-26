@@ -24,4 +24,4 @@ PRODUCT_MODEL := moto g73 5G
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DeviceName=devonf_g_sys
+    DeviceName=devonf
