@@ -142,14 +142,13 @@ public class TouchKeyHandler implements DeviceKeyHandler {
         if (action != 0 && !mEventHandler.hasMessages(GESTURE_REQUEST)
                 && event.getAction() != KeyEvent.ACTION_UP) {
             final Message msg = getMessageForAction(action);
-
             if (mProximitySensor != null) {
-                mGestureWakeLock.acquire(2 * 100);
+                mGestureWakeLock.acquire();
                 mEventHandler.sendMessageDelayed(msg, 100);
                 processEvent(action);
             } else {
                 mGestureWakeLock.acquire();
-                mEventHandler.sendMessage();
+                mEventHandler.sendMessage(msg);
             }
         }
 
@@ -162,7 +161,7 @@ public class TouchKeyHandler implements DeviceKeyHandler {
     }
 
     private void processEvent(final int action) {
-        mProximityWakeLock.acquire(EVENT_PROCESS_WAKELOCK_DURATION);
+        mProximityWakeLock.acquire();
         mSensorManager.registerListener(new SensorEventListener() {
             @Override
             public void onSensorChanged(SensorEvent event) {

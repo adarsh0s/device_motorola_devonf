@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
     audioclient-types-aidl-cpp.vendor \
 
 PRODUCT_PACKAGES += \
-    LunarisDolby \
+    DolbyAtmos \
     MtkInCallService
 
 PRODUCT_COPY_FILES += \
